@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.trackingmapusingfrosquire">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCV1_n7l1t5KcQgxHpeTBJoNaj9tjcuXCY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Activity.ActivityTest" />
+        <activity
+            android:name=".Activity.RegisterUser"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.Login_Activity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity android:name=".Activity.UserHome" />
+        <activity
+            android:name=".Activity.PlottingMap"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.MapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.UserHomeNav"
+            android:label="@string/title_activity_user_home_nav"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.loc" />
+        <activity
+            android:name=".Activity.PlottingMapForApurticularLocation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.MainActivitys" />
+        <activity android:name=".Activity.UserCurrentLocation" />
+        <activity android:name=".Activity.MapActivityForOn" />
+        <activity
+            android:name=".Activity.SplashSreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MapActivityForSaved"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity android:name=".Activity.UpdateUser"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+
+    </application>
+
+</manifest>

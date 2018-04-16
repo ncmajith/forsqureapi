@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Enter The Time Billow and  We Will Make the Plan For You..!"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:padding="20dp"
+        >
+<EditText
+    android:layout_width="150dp"
+    android:id="@+id/edTime"
+    android:textSize="50dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+android:focusable="false"
+    android:inputType="time"/>
+        />
+        <EditText
+            android:layout_width="150dp"
+            android:id="@+id/endTime"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="50dp"
+            android:focusable="false"
+            android:layout_height="wrap_content"
+            android:inputType="time"/>
+        />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="onSelectFragment"
+        android:text="Submit"/>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
